@@ -9,7 +9,7 @@ int ways(int n){
     if(n==0||n==1)
     return 1;
 
-    return ways(n-1)+ways(n-2)+ways(n-3);
+    return ways(n-1)+ways(n-2)+ways(n-3)     ;
 }
 
 int main(){
