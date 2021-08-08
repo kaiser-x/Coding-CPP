@@ -9,9 +9,7 @@ void subseq(string ip,string op,int index){
         cout<<endl;
         return;
     }
-
     
-
     return subseq(ip,op,index+1);
     op.push_back(ip[index]);
     return subseq(ip,op,index+1);
