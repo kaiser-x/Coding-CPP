@@ -2,7 +2,6 @@
 // knapsack of capacity W to get the maximum total value in the knapsack.
 // Note: Unlike 0/1 knapsack, you are allowed to break the item. 
 
-
 // Example 1:
 
 // Input:
@@ -18,7 +17,6 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-
 
 struct Item{
     int value;
@@ -59,9 +57,7 @@ struct Item{
             }
         }
         return final_value;
-    }
-        
-
+    }        
 
 int main()
 {

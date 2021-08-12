@@ -2,7 +2,6 @@
 //rather than having a global count variable or passing it through as parameter,using this method will help you in
 //dp
 
-
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -20,8 +19,6 @@ int countsubsets(int index,int arr[],int n,int tot,int sum){
    int r= countsubsets(index+1,arr,n,tot,sum);
     return l+r;
 }
-//
-
 
 //same thing but here we are checking for subsets so it can contain duplicates if
 //sim is 4 then {1,1,1,1} is also an answers.
@@ -33,17 +30,16 @@ int countsubsets(int index,int arr[],int n,int sum){
         else
             return 0;
     }
-    int l,r;
 
+    int l,r;
       if(arr[index]<sum){
-   sum -=arr[index];
+        sum -=arr[index];
     r= countsubsets(index,arr,n,sum);
    }
  
     l= countsubsets(index+1,arr,n,sum);
     return l+r;
 }
-
 
 int main(){
     int n;
