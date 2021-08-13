@@ -18,6 +18,28 @@ void findpath(int i,int j,string s){
     findpath(i,j+1,s);
     s.pop_back();
 }
+// bool findpath(int i,int j,string s){
+//     //boundary check
+//     if(i>=n||j>=m)
+//         return false;
+//         //last index then print;
+//     if(i==n-1&&j==m-1){
+//         cout<< s <<endl;
+//         return true;
+//     }
+
+//     s.push_back('D');
+//     if(findpath(i+1,j,s)==true){
+//         return true;
+//     }
+//     s.pop_back();
+//     s.push_back('R');
+//     if(findpath(i,j+1,s)==true){
+//         return true;
+//     }
+//     s.pop_back();
+//     return false;
+// }
 int main(){
     
     cin>>n>>m;
