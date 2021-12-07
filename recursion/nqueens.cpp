@@ -135,6 +135,7 @@ bool nqueens(int col,vector<vector<int>>&mat,vector<int>&ludHash,vector<int>&lef
     }
     return false;
 }
+
 int main(){
     cin>>n;
     vector<vector<int>>mat(n,vector<int>(n,0));
